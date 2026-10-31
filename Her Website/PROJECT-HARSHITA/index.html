@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Harshita 🎀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="gate">
+  <div class="arch"><img src="assets/photos/door.jpg" alt="Harshita"></div>
+  <h1>Harshita</h1>
+  <p>Someone built a little universe for you.</p>
+  <button id="enter">Open it</button>
+</section>
+
+<main hidden>
+  <section id="welcome" class="chap">
+    <h2>Happy birthday, Harshita</h2>
+    <p>05 January 2027. Scroll slowly. Everything here was made for you.</p>
+  </section>
+
+  <section id="gallery" class="chap">
+    <h2>The Harshita gallery</h2>
+    <p>Tap any picture to see it big.</p>
+    <div class="wall" id="wall"></div>
+  </section>
+
+  <section id="memories" class="chap">
+    <h2>The last times</h2>
+    <p>Some days feel like goodbyes. We took photos anyway.</p>
+    <div id="lane"></div>
+  </section>
+
+  <section id="quiz" class="chap">
+    <h2>The little challenge</h2>
+    <p id="qtext"></p>
+    <div id="qopts"></div>
+    <p id="qfb" class="fb"></p>
+  </section>
+
+  <section id="gifts" class="chap">
+    <h2>Hidden surprises</h2>
+    <p>Pick a box.</p>
+    <div class="boxes" id="boxes"></div>
+    <p id="gnote" class="fb"></p>
+    <img id="gimg" alt="A memory" hidden>
+  </section>
+
+  <section id="letter" class="chap">
+    <h2>A letter for you</h2>
+    <button id="env" class="env" aria-label="Open the letter">💌</button>
+    <div id="paper" class="paper" hidden></div>
+  </section>
+
+  <section id="finale" class="chap">
+    <h2>Make a wish</h2>
+    <p id="cmsg">Tap each candle to blow it out.</p>
+    <div class="cake"><div class="candles" id="candles"></div><div class="tier t1"></div><div class="tier t2"></div></div>
+    <img id="fimg" src="assets/photos/finale.jpg" alt="Harshita" hidden>
+    <h3 id="fin" hidden>Happy birthday, Harshita 🎀</h3>
+  </section>
+</main>
+
+<button id="mus" hidden aria-label="Play or pause music">🎵</button>
+<div id="lb" hidden><img alt=""></div>
+<script src="script.js"></script>
+</body>
+</html>
