@@ -10,6 +10,14 @@
 </head>
 <body>
 
+<section id="lock">
+  <h2>For Harshita 🔒</h2>
+  <p>Enter the secret code</p>
+  <div id="dots"><i></i><i></i><i></i><i></i></div>
+  <div id="pad"></div>
+  <p id="hint">Hint: a date she knows very well</p>
+</section>
+
 <section id="gate">
   <div class="arch"><img src="assets/photos/door.jpg" alt="Harshita"></div>
   <h1>Harshita</h1>
@@ -20,7 +28,19 @@
 <main hidden>
   <section id="welcome" class="chap">
     <h2>Happy birthday, Harshita</h2>
-    <p>05 January 2027. Scroll slowly. Everything here was made for you.</p>
+    <p>05 January 2027. Take your time. Everything here was made for you.</p>
+    <div class="arch sm"><img src="assets/photos/throwback.jpg" alt="An old photo" loading="lazy"></div>
+  </section>
+
+  <section id="count" class="chap">
+    <div class="arch sm"><img src="assets/photos/mom.jpg" alt="Harshita and her mother" loading="lazy"></div>
+    <h2>Almost time</h2>
+    <p id="cd"></p>
+  </section>
+
+  <section class="aslide">
+    <div class="arch"><img src="assets/photos/cutesmile.jpg" alt="Harshita" loading="lazy" style="object-position:50% 25%"></div>
+    <h2>Smile first, everything else later.</h2>
   </section>
 
   <section id="gallery" class="chap">
@@ -42,12 +62,44 @@
     <p id="qfb" class="fb"></p>
   </section>
 
+  <section id="pop" class="chap">
+    <h2>Pop the balloons</h2>
+    <p>Pop all eight to reveal something.</p>
+    <div id="bal"></div>
+    <p id="word" aria-live="polite"></p>
+  </section>
+
   <section id="gifts" class="chap">
     <h2>Hidden surprises</h2>
     <p>Pick a box.</p>
     <div class="boxes" id="boxes"></div>
     <p id="gnote" class="fb"></p>
     <img id="gimg" alt="A memory" hidden>
+  </section>
+
+  <section id="comp" class="chap">
+    <h2>Compliment machine</h2>
+    <p id="cline" class="fb">Press the button.</p>
+    <button id="cbtn" class="btn">Give me one</button>
+  </section>
+
+  <section id="fort" class="chap">
+    <h2>Your 2027 fortune</h2>
+    <p id="fline" class="fb">Crack the cookie to see what the new year says.</p>
+    <button id="fbtn" class="btn">🥠 Crack it</button>
+  </section>
+
+  <section id="jar" class="chap">
+    <h2>The wish jar</h2>
+    <p>Type a wish and send it up to the stars. It stays on your screen only.</p>
+    <input id="wi" maxlength="60" placeholder="I wish..." aria-label="Your wish">
+    <button id="wb" class="btn">Send it up</button>
+    <div id="sky"></div>
+  </section>
+
+  <section class="aslide alt">
+    <div class="arch"><img src="assets/photos/hands.jpg" alt="Harshita" loading="lazy"></div>
+    <h2>Some people just glow.</h2>
   </section>
 
   <section id="letter" class="chap">
@@ -66,7 +118,8 @@
 </main>
 
 <button id="mus" hidden aria-label="Play or pause music">🎵</button>
-<div id="lb" hidden><img alt=""></div>
+<nav id="nav" hidden><button id="back" class="btn">Back</button><span id="pg"></span><button id="next" class="btn">Next</button></nav>
+<div id="lb" hidden><img alt=""><p id="lbc"></p></div>
 <script src="script.js"></script>
 </body>
 </html>
